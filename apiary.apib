@@ -29,25 +29,9 @@ Polls is a simple API allowing consumers to view polls and vote in them.
                         "choice": "Ruby",
                         "votes": 256
                     }
-                ]
             }
         
-            {
-                "question": "Favourite speaking language?",
-                "published_at": "2015-08-05T08:40:51.620Z",
-                "choices": [
-                    {
-                        "choice": "English",
-                        "votes": 0
-                    }, {
-                        "choice": "French",
-                        "votes": 0
-                    }, {
-                        "choice": "Bostonian",
-                        "votes": 0
-                    }
-                ]
-            }
+    
         ]
 
 ### Create a New Question [POST]
@@ -65,15 +49,6 @@ form of choices.
                 "Python",
                 "Objective-C",
                 "Ruby"
-            ]
-        }
-        
-         {
-            "question": "Favourite speaking language?",
-            "choices": [
-                "English",
-                "French",
-                "Bostonian"
             ]
         }
 
@@ -104,6 +79,18 @@ form of choices.
                     }
                 ]
             }
+            
++ Request (application/json)
+        
+         {
+            "question": "Favourite speaking language?",
+            "choices": [
+                "English",
+                "French",
+                "Bostonian"
+            ]
+        }
+
             
 + Response 202 (application/json)
 
