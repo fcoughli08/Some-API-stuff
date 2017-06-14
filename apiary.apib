@@ -14,23 +14,57 @@ Polls is a simple API allowing consumers to view polls and vote in them.
         [
             {
                 "question": "Favourite programming language?",
-                "published_at": "2015-08-05T08:40:51.620Z",
+                "published_at": "2014-11-11T08:40:51.620Z",
+                "url": "/questions/1",
                 "choices": [
                     {
                         "choice": "Swift",
+                        "url": "/questions/1/choices/1",
                         "votes": 2048
                     }, {
                         "choice": "Python",
+                        "url": "/questions/1/choices/2",
                         "votes": 1024
                     }, {
-                        "choice": "Java",
+                        "choice": "Objective-C",
+                        "url": "/questions/1/choices/3",
                         "votes": 512
                     }, {
                         "choice": "Ruby",
+                        "url": "/questions/1/choices/4",
                         "votes": 256
                     }
-                    ]
-    
+                ]
+            }
+        ]
+        
++ Response 200 (application/json)
+
+        [
+            {
+                "question": "Favourite pie?",
+                "published_at": "2014-11-11T08:40:51.620Z",
+                "url": "/questions/2",
+                "choices": [
+                    {
+                        "choice": "Blueberry",
+                        "url": "/questions/2/choices/1",
+                        "votes": 2048
+                    }, {
+                        "choice": "Lemon",
+                        "url": "/questions/2/choices/2",
+                        "votes": 1024
+                    }, {
+                        "choice": "Mince",
+                        "url": "/questions/2/choices/3",
+                        "votes": 512
+                    }, {
+                        "choice": "Boston Creme",
+                        "url": "/questions/2/choices/4",
+                        "votes": 256
+                    }
+                ]
+            }
         ]
 
 ### Create a New Question [POST]
